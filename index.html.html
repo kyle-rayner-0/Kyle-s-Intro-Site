@@ -1,0 +1,287 @@
+<html>
+    <head>
+        <title>Kyle's Site</title>
+        <style>
+            body{
+                background-image: url("gifs/starryspacegif1.gif");
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+
+            .container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "profile profile rightsideb"
+    "menu content rightsideb"    
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 5px;
+  background-color: rgba(5, 46, 180, 0.4);
+  padding: 5px;
+}
+   
+    .container > div {
+  background-color: rgba(19, 185, 14, 0.6);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+  background-image: url(glbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 35%;
+}
+.container > div.profile {
+  grid-area: profile;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.rightsideb {
+  grid-area: rightsideb;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+
+.contentboxes{
+    border-style: outset;
+    border-color: rgba(5, 46, 180, 0.8);
+    padding: 5px;
+    margin: 5px;
+}
+
+.glow{
+    text-shadow: 0 0 15px rgba(56, 165, 255, 0.6);
+}
+
+
+    .vinyl-container {
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .vinyl {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .rotate {
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header glow" id="top"><h1><b>Kyle's Page</b></h1></div>
+            <div class="profile">
+                <div style="display: inline-block;">
+                <img src="photos/kyleraynerpfp1.png" alt="kyle_rayner" width="100px" height="100px">
+                </div>
+                <div style="display: inline-block;"><p>Hi! my call name is Kyle 
+                    <br>Pronauns: He/Him 
+                    <br>About me: Im 16 years 
+                    <br> old Canadian-Europian boy,
+                    <br>I currently live at south-west of Canada</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <br>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <br>
+                    <li><a href="#likes">Likes</a></li>
+                    <br>
+                    <li><a href="#art">Art</a></li>
+                    <br>
+                    <li><a href="#HoFC">Hall of Favourite<br> Characters</a></li>
+                    <br>
+                    <li><a href="#gifs">Gifs</a></li>
+                    <br>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div style="margin-left: 233px;"><img src="gifs/websiteunderconstruction.gif" width="200px" height="200px"></div>
+                <div class="contentboxes" id="aboutme">
+                    <h2 style="text-align: center;border: 1px dashed blue;padding: 0;">About Me</h2>
+                    <p>My favourite colour is blue and green, Favourite planet is Neptune,
+                        AroAce Bi, Philosophy is Absurdism,
+                        About religion for me its kinda a spectrum between pantheism and atheism,
+                        My favourite sports are hiking, badmanton, oriantring,
+                        I love coding, Math, Sciences and drawing; I do mainly oil paints but i use 
+                        acrylic and gauge too plus sketching and i started digital like 2 weeks ago, I like hot and sour foods
+                        I like japanese and iltalian cousine,
+                        Movies, book, musics etc. is on likes page (look at menu)</p>                
+                </div>
+                <div class="contentboxes" id="likes">
+                    <h2 style="text-align: center;border: 1px dashed blue;padding: 0;">Likes</h2>
+                    <h3>Music</h3>
+                    <p>Artists: Seapool, TV Girl, Foo Fighters, The Strokes, Cult Memeber, Pink Panthres,
+                    New Dad, Computer, Suki Waterhouse, Le Tigre, Alex G, The Crane Wives, Jorge Rivera-Herrans,
+                    Mitski, Tame Impala, Mass of the Fermenting Dregs, Cornelius, Rebzyyx, Radiohead, Weezers, Miracle Music,
+                    Grimes, Passion Pit, Pogo, Pastel Ghost, Jack Stauber ... 
+                    Musics: Mirrors Demo-overtonight, Every Day, Aoi Koi, Mass Anasthesia, Black Sheep, Dove(doll ver),
+                    Hate yourself, Better in the Dark, Iris, Everlong, Summerboy, Clear eyes, The adults are talking,
+                    BrooklynBloodPop, Sleepyhead, U werent here I really miss you, Fantastic Life, Angel, Sleep talking,
+                    Creep, Mis, All in my head, Schizo Flare [personal fav], I bet on losing dogs, Mama's Boy,
+                    Good looking, Deceptacon, Epic: The Musical (love in paradise fav), Dancing w/ ur eyes closed, 
+                    Step on me, Be nice to me, the rodents' discussions, Bernadette, Trees, Baby Hotline, The last song,
+                    Reptilia, Andrew in Drag, Warmpop ...
+                    </p>
+                    <br>
+<div class="vinyl-container">
+    <img src="photos/vinyls/allinmyheadvynil.png" class="vinyl" id="vinyl1" />
+    <audio id="audio1" src="music/All in my head.mp3"></audio>
+  </div>
+
+  <div class="vinyl-container">
+    <img src="photos/vinyls/cleareyesvynil.png" class="vinyl" id="vinyl2" />
+    <audio id="audio2" src="music/Clear eyes - Aiden Swank_beachblonde (slowed_end part looped).mp3"></audio>
+  </div>
+
+  <div class="vinyl-container">
+    <img src="photos/vinyls/shizoflarevinyl.png" class="vinyl" id="vinyl3" />
+    <audio id="audio3" src="music/Schizo Flare.mp3"></audio>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const vinyls = [
+        { imgId: "vinyl1", audioId: "audio1" },
+        { imgId: "vinyl2", audioId: "audio2" },
+        { imgId: "vinyl3", audioId: "audio3" }
+      ];
+
+      vinyls.forEach(({ imgId, audioId }) => {
+        const vinyl = document.getElementById(imgId);
+        const audio = document.getElementById(audioId);
+
+        vinyl.addEventListener("click", () => {
+          // Pause other tracks and stop other rotations
+          vinyls.forEach(({ imgId: otherImgId, audioId: otherAudioId }) => {
+            if (otherAudioId !== audioId) {
+              const otherAudio = document.getElementById(otherAudioId);
+              const otherVinyl = document.getElementById(otherImgId);
+              otherAudio.pause();
+              otherAudio.currentTime = 0;
+              otherVinyl.classList.remove("rotate");
+            }
+          });
+
+          // Toggle current one
+          if (audio.paused) {
+            audio.play();
+            vinyl.classList.add("rotate");
+          } else {
+            audio.pause();
+            vinyl.classList.remove("rotate");
+          }
+        });
+      });
+    });
+  </script>
+                    <br>
+                    <img src="gifs/starwarsdividergif.gif">
+                    <h3>Movies/Series</h3>
+                    <p>Mickey17, Neon genesis evangelion(movies+anime), wednesday, Alice in borderlands, Adventure Time,
+                    Chainsaw man, Superman 2025, Batman 2022, Young Justice Animated Series, Hunger Games, Lego Batman,
+                    Star Trek, Daredevil, Moonknight,Interstellar, 2001 a space odyssey and uhhh uhmm really more but im lazy
+                    so ima add later.
+                    </p>
+                    <img src="gifs/starwarsdividergif.gif">
+                    <h3>Literature</h3>
+                    <p>Any jules verne, Mark Twain, Nichtze books, Plato, Jan-Jack roussou, Mikhail Bulgakov(Master and Margaritta fav),
+                    Dostoyevski, Tolstoy, Nicolaus Copernicus, Aleksey N. Tolstoy(aelita fav), Dr. Jivago- Boris Pastenak, 2 year school holiday- jules verne,
+                    Huncklebarry fin's adventures ... I swear there is more i will add later
+                    </p>
+                </div>
+
+                <div class="contentboxes" id="art">
+                    <h2 style="text-align: center;border: 1px dashed blue;padding: 0;">Art</h2>
+                    <img src="gifs/underconstructionsouthpark.gif">
+                </div>
+
+                <div class="contentboxes" id="HoFC">
+                    <h2 style="text-align: center;border: 1px dashed blue;padding: 0;">Hall of Favourite Characters</h2>
+                    <img src="photos/hfc/a219ef7fa6e873f7e0139ec4d0eacc41.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/Absolute_Martian_Manhunter_issue.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/ann.png" width="100px" height="100px">
+                    <img src="photos/hfc/asa.png" width="100px" height="100px">
+                    <img src="photos/hfc/asuka.png" width="100px" height="100px">
+                    <img src="photos/hfc/batman.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/catwoman.png" width="100px" height="100px">
+                    <img src="photos/hfc/daredevil.png" width="100px" height="100px">
+                    <img src="photos/hfc/denji.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/green-lantern-hal-jordan.gif" width="100px" height="100px">
+                    <img src="photos/hfc/jasontodd.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/johnconstantinehfc.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/kidflash.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/kuina.png" width="100px" height="100px">
+                    <img src="photos/hfc/kyleraynerhfc.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/makima.png" width="100px" height="100px">
+                    <img src="photos/hfc/nightwing.png" width="100px" height="100px">
+                    <img src="photos/hfc/rei.png" width="100px" height="100px">
+                    <img src="photos/hfc/shidihaya.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/shinji.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/superman.png" width="100px" height="100px">
+                    <img src="photos/hfc/timdrake.png" width="100px" height="100px">
+                    <img src="photos/hfc/c00345bbaa2ff26fbfa36eebd73d01f9.jpg" width="100px" height="100px">
+                    <img src="photos/hfc/latest.jpg" width="100px" height="100px">
+
+                </div>
+
+                <div class="contentboxes" id="gifs">
+                    <h2 style="text-align: center;border: 1px dashed blue;padding: 0;">Gifs</h2>
+                    <img src="gifs/imp (2)/2501171_e360c.gif">
+                    <img src="gifs/imp (2)/absltbst.webp">
+                    <img src="gifs/imp (2)/d2q3u4h-3e89c13f-76d2-4528-9481-4869fa9ce517.gif">
+                    <img src="gifs/imp (2)/eys.gif">
+                    <img src="gifs/imp (2)/gctys.gif">
+                    <img src="gifs/imp (2)/IMG_2425.GIF">
+                    <img src="gifs/imp (2)/IMG_2426.GIF">
+                    <img src="gifs/imp (2)/IMG_2428.GIF">
+                    <img src="gifs/imp (2)/IMG_2430.GIF">
+                    <img src="gifs/imp (2)/IMG_2431.GIF">
+                    <img src="gifs/imp (2)/IMG_2435.GIF">
+                    <img src="gifs/imp (2)/IMG_2438.GIF">
+                    <img src="gifs/imp (2)/IMG_2439.GIF">
+                    <img src="gifs/imp (2)/IMG_2440.GIF">
+                    <img src="gifs/imp (2)/IMG_2441.GIF">
+                    <img src="gifs/imp (2)/IMG_2443.GIF">
+                    <img src="gifs/imp (2)/IMG_2442.GIF">
+                    <img src="gifs/imp (2)/nclr.gif">
+                    <img src="gifs/imp (2)/tumblr_46dfd5ca88172378e30af7d9a1e0d6c4_850c8702_250.webp">
+                    <img src="gifs/imp (2)/afxbutton1.gif">
+                    <img src="gifs/glblinkie.gif">
+                    <img src="gifs/supermanbatmanblinkie.gif">
+                    <img src="gifs/supermanblinkie1.gif">
+
+                </div>
+            </div>
+            <div class="rightsideb"><img src="gifs/oceangifside4.gif"></div>
+            <div class="footer" id="footer">
+                <a href='http://www.freevisitorcounters.com'>here</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=6ef9367789916f20e83d5339b75f7d08475fe0ea'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1399697/t/6"></script>
+                <img src="gifs/worldwideweb_badge.gif">
+            </div>
+        </div>
+    </body>
+</html>
